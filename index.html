@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gallery of Images</h1>
+        <button type="button">New Pic +</button>
+    </header>        
+    <form>
+            <h2>Insert new picture</h2>
+            <input type="url"  placeholder="Insert the URL" id="ulr-new-img">
+            <button type="submit">Add</button>
+            <button type="reset" id="cancel-btn">Cancel</button>
+        </form>
+    <ul>
+
+        <li>
+            <img src="./images/foto1.jpg">
+            <div class="overlay-img-link" >
+                <a href="./images/foto1.jpg" target="_blank" title="Full size image">Full size image</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto2.jpg">
+            <div class="overlay-img-link">
+                <a href="./images/foto2.jpg" target="_blank" title="Full size image">Full size image</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto3.jpg">
+            <div class="overlay-img-link">
+                <a href="./images/foto3.jpg" target="_blank" title="Full size image">Full size image</a>
+            </div>
+        </li>
+
+    </ul>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>

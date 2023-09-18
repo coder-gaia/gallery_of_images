@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+header{
+    background-color: #8811b7;
+    color:#fff;
+    border-bottom: 15px solid #38014e;
+    text-transform: uppercase;
+    font-style: italic;
+    display:flex;
+    justify-content: center;
+    padding:16px 0;
+}
+header button{
+    margin-left: 16px;
+}
+form{
+    background-color: #adadad;
+    padding: 24px 0;
+    text-align: center;
+    display:none;
+}
+form h2{
+    margin-bottom: 16px;
+}
+form input, button{
+    cursor: pointer;
+    padding:8px;
+    border-radius: 5px;
+    border-bottom:3.5px solid #000;
+}
+#cancel-btn{
+    background-color: #c00000bf;
+}
+button{
+    background-color: #136721;
+    color: #fff;
+    border:none;
+    border-bottom: 5px solid #000;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button:hover{
+    color: #000;
+}
+ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+ul li{
+    max-width: 25%;
+    max-height: 280px;
+    list-style: none;
+    position:relative;
+}
+ul li img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.overlay-img-link{
+    padding:16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    opacity:0;
+    transition:all ease .5s;
+}
+.overlay-img-link a{
+    color:#fff;
+    text-decoration: none;
+}
+ul li:hover .overlay-img-link{
+    opacity: 1;
+}
